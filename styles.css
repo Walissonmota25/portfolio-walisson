@@ -1,0 +1,242 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0d;
+  --bg-alt: #101014;
+  --panel: #17171d;
+  --text: #f2f2f4;
+  --muted: #a6a6b0;
+  --red: #bd3340;
+  --red-hover: #98232f;
+  --line: #292930;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  letter-spacing: -0.035em;
+}
+
+.site-navbar {
+  background: rgba(10, 10, 13, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+}
+
+.brand-dot,
+.eyebrow,
+.project-type,
+.skill-number {
+  color: var(--red);
+}
+
+.nav-link {
+  color: #c9c9d0;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #fff;
+}
+
+.hero-section {
+  min-height: 78vh;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(189, 51, 64, 0.16), transparent 45%),
+    linear-gradient(180deg, #111115 0%, var(--bg) 88%);
+}
+
+.eyebrow,
+.project-type {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.hero-section h1 {
+  color: var(--text);
+  line-height: 1.15;
+}
+
+.hero-copy,
+.contact-copy {
+  max-width: 680px;
+}
+
+.hero-copy {
+  color: var(--muted);
+}
+
+.hero-portrait-frame {
+  width: min(100%, 390px);
+  padding: 0.45rem;
+  border: 1px solid rgba(189, 51, 64, 0.55);
+  border-radius: 1.4rem;
+  background: linear-gradient(145deg, rgba(189, 51, 64, 0.18), rgba(255, 255, 255, 0.025));
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4), 0 0 2.5rem rgba(189, 51, 64, 0.12);
+}
+
+.hero-portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 28%;
+  border-radius: 1.05rem;
+}
+
+.btn-red {
+  background: var(--red);
+  border: 1px solid var(--red);
+  color: #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-red:hover,
+.btn-red:focus-visible {
+  background: var(--red-hover);
+  border-color: var(--red-hover);
+  box-shadow: 0 0.5rem 1.4rem rgba(189, 51, 64, 0.22);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  border-color: #505058;
+  color: #ededf0;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus-visible {
+  background: #24242b;
+  border-color: #777780;
+  color: #fff;
+}
+
+.section-space {
+  padding: 5.5rem 0;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+.section-heading h2,
+.section-alt h2 {
+  color: var(--text);
+}
+
+.content-panel,
+.skill-card,
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 2px solid rgba(189, 51, 64, 0.82);
+  color: var(--text);
+}
+
+.content-panel {
+  border-radius: 0.75rem;
+}
+
+.section-copy {
+  color: #c6c6ce;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.muted-copy {
+  color: var(--muted);
+}
+
+.skill-card,
+.project-card {
+  border-radius: 0.75rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Recurso novo: os cards se elevam suavemente ao passar o cursor. */
+.skill-card:hover,
+.project-card:hover {
+  border-color: rgba(189, 51, 64, 0.7);
+  box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.38);
+  transform: translateY(-5px);
+}
+
+.skill-number {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.project-type {
+  font-size: 0.68rem;
+}
+
+.tech-badge {
+  background: #222229;
+  border: 1px solid #36363e;
+  color: #d0d0d7;
+  font-weight: 500;
+}
+
+.project-link {
+  color: #f08b93;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: #08080a;
+  border-top: 1px solid var(--line);
+  color: #85858e;
+}
+
+.site-footer small {
+  color: #62626c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skill-card:hover,
+  .project-card:hover,
+  .btn-red:hover {
+    transform: none;
+  }
+}
