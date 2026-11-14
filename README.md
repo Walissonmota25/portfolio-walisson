@@ -31,16 +31,16 @@ Também foi adicionada ao topo do site uma ilustração animada personalizada do
 
 O tema foi criado no arquivo `styles.css` usando variáveis CSS para as cores, gradientes e estilos personalizados. O efeito dos cards usa `transition`, `transform: translateY()` e `box-shadow`. Também foi incluída a preferência `prefers-reduced-motion`, que reduz o movimento para visitantes que solicitam menos animações.
 
-A imagem final fica em `assets/walisson-ninja-dev-manto-ajustado.png` e é exibida no cabeçalho com uma tag `<img>`, texto alternativo e regras responsivas de proporção, enquadramento e borda definidas em `styles.css`. A região indicada recebeu um retoque pontual, preservando o restante da arte.
+A imagem final fica em `walisson-ninja-dev-manto-ajustado.png` e é exibida no cabeçalho com uma tag `<img>`, texto alternativo e regras responsivas de proporção, enquadramento e borda definidas em `styles.css`. A região indicada recebeu um retoque pontual, preservando o restante da arte.
 
 O layout usa o grid responsivo do Bootstrap. Os links do menu apontam para os `id` das seções da própria página, e o JavaScript do Bootstrap controla a abertura do menu em telas menores.
 
 ## Como executar localmente
 
 1. Baixe ou clone o repositório.
-2. Mantenha `index.html` e `styles.css` na mesma pasta.
+2. Mantenha `index.html`, `styles.css`, `README.md` e `walisson-ninja-dev-manto-ajustado.png` na mesma pasta.
 3. Abra `index.html` no navegador. Como Bootstrap é carregado por CDN, é necessária uma conexão com a internet para carregar seus estilos e o menu responsivo.
 
 ## Publicação
 
-O site pode ser publicado pelo GitHub Pages. Depois de ativar a publicação para a branch e pasta que contêm o `index.html`, substitua os campos acima pelos links reais do repositório e do site publicado.
+O site pode ser publicado pelo GitHub Pages. Depois de ativar a publicação para a branch e pasta que contêm o `index.html`, o site poderá ser acessado pelo link informado na seção `Acessos`.
